@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floppy</title>
+    <link rel="stylesheet" href="res/bootstrap@5.2.0.min.css">
+    <link rel="stylesheet" href="res/chartist.min.css">
+    <style>
+.custom-title {
+  color: #4dc3bc;
+  font-weight: 500;
+}
+
+.btn-orange { background-color: #f05a28; border-radius: 4px; }
+.btn-turquoise { background-color: #4dc3bc; border-radius: 4px; }
+
+.form-control-sm {
+  border-radius: 4px;
+  border: 1px solid #dee2e6;
+}
+
+.custom-checkbox:checked {
+  background-color: #1a3a5a; 
+  border-color: #1a3a5a;
+}
+    </style>
+</head>
+<body>
+   <div class="modal d-block" style="background: rgba(0,0,0,0.5);" tabindex="-1">
+  <div class="modal-dialog modal-xl"> <div class="modal-content border-0 shadow">
+      
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title custom-title">Refund Commercial Agreement Details</h5>
+        <button type="button" class="btn-close" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body">
+        
+        <div class="row g-2 mb-3">
+          <div class="col-md-3">
+            <label class="small text-muted">Agreement Date :</label>
+            <input type="text" class="form-control form-control-sm bg-light" readonly>
+          </div>
+          <div class="col-md-9">
+            <label class="small text-muted">Passenger name :</label>
+            <input type="text" class="form-control form-control-sm bg-light" readonly>
+          </div>
+        </div>
+
+      <div class="table-responsive">
+    <table class="table table-sm table-borderless align-middle w-auto">
+        <thead>
+            <tr class="text-muted small">
+                <th class="px-1 text-start" style="width: 50px;">P/C</th>
+                <th class="px-1 text-start" style="width: 60px;">CPN</th>
+                <th class="px-1 text-start">Ticket</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="px-1">
+                    <input type="text" class="form-control form-control-sm custom-input" value="PRI" style="width: 45px;">
+                </td>
+                <td class="px-1">
+                    <input type="text" class="form-control form-control-sm custom-input" style="width: 55px;">
+                </td>
+                <td class="px-1">
+                    <input type="text" class="form-control form-control-sm custom-input" value="660000006928" style="width: 140px;">
+                </td>
+            </tr>
+            <tr>
+                <td class="px-1"><input type="text" class="form-control form-control-sm custom-input" style="width: 45px;"></td>
+                <td class="px-1"><input type="text" class="form-control form-control-sm custom-input" style="width: 55px;"></td>
+                <td class="px-1"><input type="text" class="form-control form-control-sm custom-input" style="width: 140px;"></td>
+            </tr>
+            <tr>
+    <td class="px-1"><input type="text" class="form-control form-control-sm custom-input" style="width: 45px;"></td>
+    <td class="px-1"><input type="text" class="form-control form-control-sm custom-input" style="width: 55px;"></td>
+    <td class="px-1"><input type="text" class="form-control form-control-sm custom-input" style="width: 140px;"></td>
+</tr>
+<tr>
+    <td class="px-1"><input type="text" class="form-control form-control-sm custom-input" style="width: 45px;"></td>
+    <td class="px-1"><input type="text" class="form-control form-control-sm custom-input" style="width: 55px;"></td>
+    <td class="px-1"><input type="text" class="form-control form-control-sm custom-input" style="width: 140px;"></td>
+</tr>
+        </tbody>
+    </table>
+</div>
+        <div class="row g-2 mb-3 align-items-end flex-nowrap">
+          <div style="width: 80px;">
+            <label class="small text-muted">Curr</label>
+            <input type="text" class="form-control form-control-sm">
+          </div>
+          <div class="col-md-2">
+            <div class="form-check mb-1">
+              <input class="form-check-input custom-checkbox" type="checkbox" checked id="commIncl">
+              <label class="form-check-label small" style="font-size: 0.75rem;" for="commIncl">Comm Incl plty</label>
+            </div>
+          </div>
+          <div class="col">
+            <label class="small text-muted">Penalty</label>
+            <input type="text" class="form-control form-control-sm">
+          </div>
+          <div class="col">
+            <label class="small text-muted">Fare</label>
+            <input type="text" class="form-control form-control-sm">
+          </div>
+          <div class="col">
+            <label class="small text-muted">Tax</label>
+            <input type="text" class="form-control form-control-sm">
+          </div>
+          <div class="col">
+            <label class="small text-muted fw-bold">Total Agreed Amount</label>
+            <input type="text" class="form-control form-control-sm fw-bold border-dark">
+          </div>
+        </div>
+
+        <div class="row g-2">
+          <div class="col-md-9">
+            <label class="small text-muted">References</label>
+            <textarea class="form-control form-control-sm" rows="3"></textarea>
+          </div>
+          <div class="col-md-3">
+            <label class="small text-muted">Sqnu</label>
+            <input class="form-control form-control-sm"  />
+          </div>
+        </div>
+
+      </div>
+
+      <div class="modal-footer border-0 gap-2">
+        <button type="button" class="btn btn-link text-secondary text-decoration-underline fw-medium">Close</button>
+        <button type="button" class="btn btn-orange text-white border-0 px-3">
+          Delete <svg width="14" height="14" fill="white" class="ms-1" viewBox="0 0 16 16"><path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/><path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/></svg>
+        </button>
+        <button type="button" class="btn btn-turquoise text-white border-0 px-3">
+          Validate <svg width="14" height="14" fill="white" class="ms-1" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+</body>
+</html>
